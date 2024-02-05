@@ -18,6 +18,8 @@
       height="250"
       :src="product.images[0]"
       :lazy-src="product.images[0]"
+
+
     ></v-img>
 
     <v-card-item>
@@ -66,7 +68,7 @@
       <v-btn
         color="deep-purple-lighten-2"
         variant="text"
-        @click="reserve"
+        to="/productcart"
       >
         Add to cart
       </v-btn>
