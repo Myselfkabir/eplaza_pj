@@ -9,7 +9,7 @@
                 </v-col>
             </v-row>
            <v-row v-else>
-            <v-col cols="4" v-for="product in productStore.products" :key="product">
+            <v-col cols="lg-4" v-for="product in productStore.products" :key="product">
                 <product-card :product="product" />    
             </v-col>
            </v-row>

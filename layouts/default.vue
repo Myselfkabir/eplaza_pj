@@ -10,29 +10,27 @@
       >
         <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
-           <div>
-            <img width="45" src="https://fakeapi.platzi.com/_astro/logo.aa139940.png" /> 
-           </div>
+            <div>
+              <img width="45" src="https://fakeapi.platzi.com/_astro/logo.aa139940.png" /> 
+            </div>
           
-            <v-toolbar-title>
-              <span class="font-weight-black">Eplaza Store</span>
-        </v-toolbar-title>
-         
-        <v-container class="d-flex items-center">
+          
+              <span margin="50" class="font-weight-black" >Eplaza Store</span>
+          
+        <v-spacer></v-spacer>
+      
             <v-text-field 
             v-model="searchQuery"
              label="Search" 
              variant="solo-filled"
              prepend-inner-icon="mdi-magnify"
              clearable
+             
              hide-details
              
              @change="productStore.filterProduct(searchQuery)">
             </v-text-field>
-         </v-container>
-         
-    
-       
+
 
        <v-toolbar-items>
         <v-btn variant="text" icon="mdi-cart" to="/productcart"></v-btn>
@@ -49,7 +47,6 @@
       >
 
         <v-list>
-         
           <v-list-item link 
           v-for="category in categoryStore.categories"
           :key="category"
